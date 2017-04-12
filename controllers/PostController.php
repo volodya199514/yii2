@@ -66,7 +66,7 @@ class PostController extends AppController
 //        $query = "SELECT * FROM categories WHERE title LIKE '%pp%'";
 
         $query = "SELECT * FROM categories WHERE title LIKE :search";
-        $cats = Category::findBySql($query, [':search'=>'%pp%'])->all();;
+        $cats = Category::findBySql($query, [':search'=>'%pp%'])->all();
 
 
 
